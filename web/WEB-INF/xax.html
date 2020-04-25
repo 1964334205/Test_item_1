@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" name="birthday" id="birthday">
+<script src="js/laydate/laydate.js"></script> <!-- 改成你的路径 -->
+<script>
+    lay('#version').html('-v'+ laydate.v);
+    //执行一个laydate实例
+    laydate.render({
+        elem: '#birthday' //指定元素
+    });
+</script>
+</body>
+</html>

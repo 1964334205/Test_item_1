@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 存放用户数据 -->
+<users> 
+  <user id="123456" username="aaa" password="123123" email="1964334205@qq.com" birthday="1999-12-10" nickname="小温"/>
+  <user id="123" username="温向前" password="123456789" email="1964334205@qq.com" birthday="1999-1-20" nickname="小温"/>
+</users>

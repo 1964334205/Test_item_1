@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Test_item_1">
+    <output-path>E:/tomcat/apache-tomcat-9.0.30/webapps/Test_item_1</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Test_item_1/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Test_item_1" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="E:/java/demo4j/dom4j-1.6.1/jaxen-1.2.0-atlassian-2.jar" />
+          <element id="file-copy" path="E:/java/demo4j/dom4j-1.6.1/dom4j-2.1.1.jar" />
+          <element id="library" level="project" name="commons-beanutils-1.8.3" />
+          <element id="library" level="project" name="commons-collections-3.2.2" />
+          <element id="library" level="project" name="commons-logging-1.2" />
+          <element id="library" level="project" name="junit-4.7" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
