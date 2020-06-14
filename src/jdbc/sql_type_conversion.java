@@ -19,8 +19,8 @@ public class sql_type_conversion {
         //读取时
         create_read(1);
     }
-    //写入时
 
+    //写入时
     static  void  create_read_in(String name,String sfz,String class_and_grade,int major,java.util.Date time_of_enrollment,String gender) throws ClassNotFoundException, SQLException {
         //一个严谨的规范的连接方式
         Connection connection = null;

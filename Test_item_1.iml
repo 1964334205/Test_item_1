@@ -65,8 +65,8 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="junit-4.7" level="project" />
-    <orderEntry type="library" name="junit-4.7-src" level="project" />
+    <orderEntry type="library" exported="" name="junit-4.7" level="project" />
+    <orderEntry type="library" exported="" name="junit-4.7-src" level="project" />
     <orderEntry type="library" name="commons-logging-1.2" level="project" />
     <orderEntry type="library" name="commons-collections-3.2.2" level="project" />
     <orderEntry type="library" name="commons-beanutils-1.8.3" level="project" />
@@ -74,6 +74,15 @@
       <library>
         <CLASSES>
           <root url="jar://E:/java/MySQL驱动/mysql-connector-java-8.0.19/mysql-connector-java-8.0.19.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://E:/java/javax-annotation-1.0.0-sources.jar.zip!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
