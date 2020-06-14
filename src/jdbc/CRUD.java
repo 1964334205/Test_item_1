@@ -8,7 +8,7 @@ import java.sql.*;
 public class CRUD {
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
         read();//读取操作
-        System.out.println("插入");
+        /*System.out.println("插入");
         create();//插入操作
         read();//读取操作
         System.out.println("修改");
@@ -16,7 +16,7 @@ public class CRUD {
         read();//读取操作
         System.out.println("删除");
         delete();//删除操作
-        read();//读取操作
+        read();//读取操作*/
     }
     static  void  date() throws ClassNotFoundException, SQLException {
         //一个严谨的规范的连接方式
@@ -104,9 +104,9 @@ public class CRUD {
 
             //连接
             connection = jdbcUtilssing.getjdbcUtilssing().getConnection();
-
+            
             //创建语句
-            statement = connection.createStatement();
+            statement = connection.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE,ResultSet.CONCUR_UPDATABLE);
 
             //执行语句获取结果
             //在这里不建议使用*号获取数据，可读性差
@@ -122,6 +122,17 @@ public class CRUD {
                         + resultSet.getObject("gender") + "---"
                 );
             }
+            if (resultSet.previous()){
+                System.out.println(resultSet.getObject("ID") + "---"
+                        + resultSet.getObject("name") + "---"
+                        + resultSet.getObject("sfz") + "---"
+                        + resultSet.getObject("class_and_grade") + "---"
+                        + resultSet.getObject("major") + "---"
+                        + resultSet.getObject("time_of_enrollment") + "---"
+                        + resultSet.getObject("gender") + "---"
+                );
+            }
+            resultSet.absolute(5);
             //释放资源
         } finally {
             jdbcUtilssing.getjdbcUtilssing().free(resultSet, statement, connection);
